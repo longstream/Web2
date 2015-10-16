@@ -1,0 +1,76 @@
+ul{
+	list-style-type: none;
+	text-align: center;
+}
+li {
+	padding:12px;
+}
+.li1{
+	padding:20px;
+}
+.sp1{
+	font-size:25px ;
+}
+.sp2{
+	font-size:5px ;
+}
+.has{
+	border-bottom:1px rgb(238, 238,238) dashed;
+}
+#ul1{
+	color:rgb(119, 119, 119);
+	float:left;
+	border:1px rgb(225, 225, 225) solid;
+	width:318px;
+	padding-left:20px;
+	padding-right: 20px;
+	margin-left: 8%;
+	margin-top: 30px;
+}
+#form1{
+	padding:30px;
+}
+input{
+	background:rgb(255, 255, 255);
+	border:1px rgb(81, 203, 179) solid;
+	color:rgb(81, 203, 179);
+	height:45px ;
+	letter-spacing: 0.1em;
+	font-size: 17px;
+	padding:15px;
+	padding-top: 10px;
+}
+
+#ul2{
+	color:rgb(119, 119, 119);
+	float:left;
+	border:1px rgb(225, 225, 225) solid;
+	width:318px;
+	padding-left:20px;
+	padding-right: 20px;
+	margin-left: 2%;
+}
+#ul3{
+	color:rgb(119, 119, 119);
+	float:left;
+	border:1px rgb(225, 225, 225) solid;
+	width:318px;
+	padding-left:20px;
+	padding-right: 20px;
+	margin-left: 2%;
+	margin-top: 30px;
+}
+#ul2 li{
+	padding:14px;
+}
+#li2{
+	color: white;
+	background-color: rgb(26, 188, 156);
+	width:104%;
+	margin-left:-20px;
+	border-bottom: none;
+
+}
+#six{
+	height:680px;
+}

@@ -1,0 +1,181 @@
+body{font-family: "Lato", "Helvetica", Helvetica, Arial, sans-serif;
+
+}
+input[type = "button" ]:hover{
+	background-color: rgb(26, 188, 156);
+	color:white;
+}
+#top{
+	position: fixed;
+	color:white;
+	width:1348px;
+	height:60px;
+	padding-top: 15px;
+	letter-spacing: 0.1em;
+	margin-left: -8px;
+	border-bottom: 1px;
+	margin-top: -10px;
+}
+
+#menu li{
+	float:right;
+}
+#top ul #t1 {
+	float:left;
+	padding-right:700px;
+	
+	font-size: 20px;
+}
+#top ul #t2{
+	padding-right:100px;
+}
+#top ul {
+	font-size: 15px;
+}
+#t4:hover{
+	background-color: rgb(71, 200, 175);
+	cursor: pointer;
+}
+#t3:hover{
+	background-color: rgb(71, 200, 175);
+	cursor: pointer;
+}
+#t2:hover{
+	background-color: rgb(71, 200, 175);
+	cursor: pointer;
+}
+#menu{
+	float:right;
+	display: inline;
+	padding-right: 40px;
+}
+
+#one{
+	background-image: url(./img/intro-bg.png); 
+	background-repeat: no-repeat;
+	background-position: 0% -240px;
+	margin-left: -8px;
+
+	margin-top:-68px; 
+	/*margin-left:-20px;*/
+	padding:0;
+	width: 1348px;
+	height: 600px;
+
+}
+#myCanvas{
+
+	margin-left:600px;
+}
+#head{
+	color:white;
+	text-align: center;
+	padding-top: 145px;
+	font-size: 100px;
+}
+#p1{
+	color:white;
+	text-align: center;
+	font-size: 30px;
+	margin-top: -20px;
+}
+
+#mycanvas{
+	border:1px solid white;
+}
+
+#two{
+	background-image:url(./img/1.png);
+	background-repeat: no-repeat;
+	background-position: 20%;
+	width:1341px;
+	height:620px;
+}
+
+#entire{
+	color:rgb(119, 119, 119);
+	width:50%;
+	float:right;
+}
+
+#h2{
+	margin-top:120px ;
+	letter-spacing: 0.1em;
+	font-size: 30px;
+	padding-left: 40px;
+}
+.p2{
+	padding-left: 40px;
+	padding-right: 70px;
+	font-size: 20px;
+	padding-top: 20px;
+	text-align: left;
+}
+#three{
+	width:1348px;
+	height:600px;
+	background-color: rgb(26, 188, 156);
+	/*background-image:url(./img/2.png);
+	background-repeat: no-repeat;
+	background-position: 160%;*/
+	margin-left: -8px;
+	overflow: hidden;
+
+}
+
+#entire1{
+	position: relative;
+	float:left;
+	width:45%;
+	color:white;
+}
+#three img{
+	
+}
+#three #thdiv{
+	position: relative;
+	width:47.5%;
+	height:100%;
+	float:left;
+	overflow: hidden;
+	padding-top:5%;
+	padding-left: 100px;
+	padding-right: 0;
+ 
+}
+#h3{
+	margin-top: 120px;
+	text-align: right;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+#p3{
+	padding-left: 10%;
+	text-align: right;
+	font-size: 20px;
+	line-height: 1.6em;
+}
+
+#p4{
+	padding-left: 10%;
+	text-align: right;
+	padding-top: 0;
+	margin-top: -13px;
+	font-size: 20px;
+}
+
+#four{
+	color:rgb(119, 119, 119);
+}
+#h4{
+	margin-top: 120px;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+
+#p5{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 20px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset = "utf-8" />
+<title>Transitions 功能应用</title>
+
+<script type = "text/javascript" src = "jquery-1.11.3.js">
+</script>
+<script>
+
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#entire1").fadeOut("slow");
+			$("#thdiv").fadeOut("slow");
+		});
+	});
+	
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="kommadrei.css">
+<style type="text/css">
+   div{
+   	text-transform: left bottom;
+   }
+</style>
+
+</head>
+
+<body>
+    <div id = "one">
+		<h1 id = "head">kommadrei</h1>
+		<p id = "p1">Webdesign für Ihr Unternehmen</p>
+	</div>
+
+	<div id = "two">
+		<div id = "entire">
+			<h2 id = "h2">kommadrei</h2>
+			<p class = "p2">kommadrei ist ein junges, ambitioniertes Unternehmen <strong>aus Wien</strong>, das sich auf rasche Gestaltung und Umsetzung von <strong>Webseiten für Klein- und Mittelunternehmen</strong> spezialisiert hat.</p>
+
+			<p class = "p2">Bei unseren Projekten legen wir Wert auf Userfreundlichkeit und klare Strukturen. Weniger ist oft mehr!</p>
+
+			<p class = "p2">Alle unsere Webseiten laufen problemlos auf allen Displaygrößen, sei es Computer, Laptop oder Handy.
+			</p>
+		</div>
+	</div>
+
+	<button>animal</button>
+	<div id = "three" onscroll = "myfunction()">
+		<div id = "entire1">
+
+			<h2 id = "h3">Wir kümmern uns um alles!</h2>
+			<p id = "p3">
+			Sie müssen sich keine Sorgen um den Webspace, eine Domain oder sonst etwas machen – das übernehmen wir alles für Sie!
+			Wir schicken Ihnen regelmäßig Userstatistiken Ihrer Seite zu, damit Sie genau wissen, woran Ihre Kunden interessiert sind.
+			Bei all unseren Produkten ist ein vollständiges CMS (Content Management System) inkludiert. Dieses System ermöglicht es Ihnen, Ihre Webseite jederzeit selbstständig zu ändern und neue </p>
+			<p id = "p4">Unterseiten zu erstellen.</p>
+			
+		</div>
+
+		<div id  = "thdiv">
+			<img src="./img/2.png">
+		</div>
+	</div>
+
+</body>
+</html>

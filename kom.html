@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset = utf-8">
+<head>
+	<title>kommadrei</title>
+
+	<link rel="stylesheet" type="text/css" href="kommadrei.css">
+	<!-- 前三个大块(top)的样式-->
+	<link rel="stylesheet" type="text/css" href="kommadrei1.css">
+	<!-- 三个表格的样式-->
+	<link rel="stylesheet" type="text/css" href="kommadrei2.css">
+	<!--剩下的样式-->
+
+	<script type = "text/javascript" src = "jquery-1.11.3.js"></script>
+	<script type="text/javascript" src = "kommadrei.js"></script>
+	<script type="text/javascript" src = "./bootstrap-3.3.5-dist"></script>
+
+	<script type="text/javascript">
+		animate1();
+		var before = document.documentElement.scrollTop || document.body.scrollTop;
+		var delta;
+
+		$(document).ready(function(){
+			var canvas = $("#myCanvas");
+			var context = canvas.get(0).getContext("2d");
+			//context.fillRect(40, 40, 100, 100);
+			//context.translate(150, 150);
+			context.strokeStyle = "rgb(255, 255, 255)";
+			context.beginPath();
+			context.arc(50, 50, 35, 0, Math.PI*2, false);
+			context.closePath();
+			context.stroke();
+   			
+			
+		});
+		function animate1(){
+			$("#thdiv").animate({left:'100px'});
+   			$("#entire1").animate({right:'100px'});
+   			setTimeout("myAnimate()", 0);
+   		}
+   		function animate2(){
+   			$("#thdiv").fadeIn();
+			$("#entire1").fadeIn();
+			setTimeout("showAnimate()",0);
+   		}
+		function myAnimate(){
+			$("#thdiv").fadeOut();
+   			$("#entire1").fadeOut();
+		};
+		function showAnimate(){
+			$("#thdiv").animate({left:'0'});
+			$("#entire1").animate({right:'0'});
+		}
+	</script>
+</head>
+
+<body>
+	<div id = "top" onscroll = "myfunction()">
+		<ul id = "menu">
+			<li id = "t1">kommadrei.at</li>
+			<li id = "t2">PROIEKTE</li>
+			<li id = "t3">PREISE</li>
+			<li id = "t4">HOME</li>
+		</ul>
+	</div>
+
+
+	<div id = "one">
+		<h1 id = "head">kommadrei</h1>
+		<p id = "p1">Webdesign für Ihr Unternehmen</p>
+		<a href=""><canvas id = "myCanvas" width = "130" height = "130"></canvas><a>
+	</div>
+
+	<div id = "two">
+		<div id = "entire">
+			<h2 id = "h2">kommadrei</h2>
+			<p class = "p2">kommadrei ist ein junges, ambitioniertes Unternehmen <strong>aus Wien</strong>, das sich auf rasche Gestaltung und Umsetzung von <strong>Webseiten für Klein- und Mittelunternehmen</strong> spezialisiert hat.</p>
+
+			<p class = "p2">Bei unseren Projekten legen wir Wert auf Userfreundlichkeit und klare Strukturen. Weniger ist oft mehr!</p>
+
+			<p class = "p2">Alle unsere Webseiten laufen problemlos auf allen Displaygrößen, sei es Computer, Laptop oder Handy.
+			</p>
+		</div>
+	</div>
+
+	<input type = "button" value = "change" id = "button1">
+	<input type = "button" value = "change1" id = "button2">
+	<div id = "three">
+		<div id = "entire1">
+
+			<h2 id = "h3">Wir kümmern uns um alles!</h2>
+			<p id = "p3">
+			Sie müssen sich keine Sorgen um den Webspace, eine Domain oder sonst etwas machen – das übernehmen wir alles für Sie!
+			Wir schicken Ihnen regelmäßig Userstatistiken Ihrer Seite zu, damit Sie genau wissen, woran Ihre Kunden interessiert sind.
+			Bei all unseren Produkten ist ein vollständiges CMS (Content Management System) inkludiert. Dieses System ermöglicht es Ihnen, Ihre Webseite jederzeit selbstständig zu ändern und neue </p>
+			<p id = "p4">Unterseiten zu erstellen.</p>
+			
+		</div>
+
+		<div id  = "thdiv">
+			<img src="./img/2.png">
+		</div>
+	</div>
+
+	<div id = "four">
+		<h3 id = "h4">Schauen Sie sich unsere Pläne an</h3>
+		<p id = "p5">Webseiten können teuer sein. Monatliche Zahlungen bei fairen Preisen machen es einfacher.</p>
+	</div>
+
+	<div id = "five">
+
+	</div>
+
+	<div id = "six">
+		<ul id = "ul1">
+			<li class = "has li1"><strong>Basic</strong></li>
+			<li class = "has">
+				<span class = "sp1">25 €/Monat</span><br><br>
+				<span class = "sp2">+ einmalige Aktivierungsgebühr von 99 €</span></li>
+			<li class = "has">Startseite</li>
+			<li class = "has">1 Templates</li>
+			<li class = "has">unlimitierte Unterseiten</li>
+			<li class = "has">CMS</li>
+			<li class = "has">5 Emailaccounts</li>
+			<li class = "has">Wunschdomain</li>
+			<li class = "has">Userstatistiken</li>
+			<li class = "has">Entwürfe</li>
+			<li class = "form1"><input type = "button" value = "EMAILANFRACE" ></li>
+		</ul>
+
+		<ul id = "ul2">
+			<li class = "has li1"><strong>Standard</strong></li>
+			<li class = "has" id = "li2">
+				<span class = "sp1">49 €/Monat</span><br><br>
+				<span class = "sp2">+ einmalige Aktivierungsgebühr von 99 €</span></li>
+			<li class = "has">Startseite</li>
+			<li class = "has">3 Templates</li>
+			<li class = "has">unlimitierte Unterseiten</li>
+			<li class = "has">CMS</li>
+			<li class = "has">20 Emailaccounts</li>
+			<li class = "has">Wunschdomain</li>
+			<li class = "has">Userstatistiken</li>
+			<li class = "has">Entwürfe</li>
+			<li class = "form1"><input type = "button" value = "EMAILANFRACE" ></li>
+		</ul>
+
+		<ul id = "ul3">
+			<li class = "has li1"><strong>Premium</strong></li>
+			<li class = "has">
+				<span class = "sp1">89 €/Monat</span><br><br>
+				<span class = "sp2" style = "text-decoration:line-through;">+ einmalige Aktivierungsgebühr von 99 €</span></li>
+			<li class = "has">Startseite</li>
+			<li class = "has">8 Templates</li>
+			<li class = "has">unlimitierte Unterseiten</li>
+			<li class = "has">CMS</li>
+			<li class = "has">50 Emailaccounts</li>
+			<li class = "has">Wunschdomain</li>
+			<li class = "has">Userstatistiken</li>
+			<li class = "has">Entwürfe</li>
+			<li class = "form1"><input type = "button" value = "EMAILANFRACE" ></li>
+		</ul>
+
+	</div>
+
+	<div id = "seven">
+		<div id = "entire2">
+			<p id = "p6">RABATTCODE EINGEBEN</p>
+			<input type = "text" id = "text1" /><br>
+			<input type = "button"  id = "btn1" value = "ABSENDEN"/>
+		</div>
+
+		<p class = "same">Alle unsere Pläne haben eine Laufzeit von 18 Monaten. Danach fallen keine Zahlungen </p>
+		<p class = "same">mehr an, außer 50 € pro Jahr falls Sie sich entscheiden sollten die Webseite weiter </p>
+		<p class = "same">auf unserem Webspace hosten zu wollen.</p>
+
+	</div>
+
+	<div id = "eight">
+		<div >
+			<p class = "bo1">Was ist ein Template?</p>
+			<p>Aus einem Template kann man beliebig viele Unterseiten erstellen, jedes Template hat aber ein anderes Design. Die Unterseiten die daraus entstehen haben das selbe Grunddesign, jedoch Elemente die jedesmal geändert werden können, wie z. B. eine Überschrift, Text oder Bilder.</p>
+		</div>
+		<div id="">
+			<p class = "bo1">Muss ich monatlich zahlen?</p>
+			<p>Nein! Sie können auch den Gesamtbetrag nach Fertigstellung der Webseite zahlen, dabei bekommen Sie sogar noch einen Rabatt von - 10%</p>
+		</div>
+		<div id="">
+			<p class = "bo1">Wie viele Entwürfe bekomme ich?</p>
+			<p>Zuerst klären Sie mit uns durch ein Gespräch was Sie genau wollen. Aufgrund dieses Gespräches erstellen wir einen Entwurf und dieser wird solange geändert und erweitert bis Sie damit zufrieden sind. Natürlich kommt es auch vor, dass man alles über den Haufen wirft und von neu anfäng</p>
+		</div>
+		<div id="">
+			<p class = "bo1">Userstatistiken</p>
+			<p>Wenn Sie wünschen senden wir Ihnen monatlich die wichtigsten Userstatistiken zu, damit können Sie den Inhalt Ihrer Webseite entsprechend der neu gewonnenen Erkenntnissen anpassen</p>
+		</div>
+		<div id="">
+			<p class = "bo1">Wunschdomain</p>
+			<p>Wir versuchen Ihre Wunschdomain zu bekommen, jedoch kann es sein, dass diese schon vergeben ist und wir daher mit Ihnen eine neue Domain suchen müsse</p>
+		</div>
+		<div id="">
+			<p class = "bo1">Ab wann zahle ich?</p>
+			<p>Ab Fertigstellung beginnt auch die Laufzeit Ihres Vertrages.</p>
+		</div>
+
+	</div>
+
+	<div id = "nine">
+		<h1 class = "n1">Portfolio</h1>
+		<p>Hier finden Sie einige unserer Arbeiten.</p>
+		<img src="./img/Taktik.png" id = "img1">
+		<img src="./img/square_Hercules.png" id = "img2">
+		<img src="./img/schefer.png" id = "img3">
+	</div>
+
+	<div id = "ten">
+		<p class = "ten1">Kontaktieren Sie uns!</p>
+		<p class = "ten2">Haben Sie Fragen oder wollen Sie einfach so Kontakt aufnehmen? Zögern Sie nicht!
+		</p >
+		<br>
+		<p class = "ten2">office@kommadrei.at</p>
+		<p class = "ten2">0699 171 580 71
+		</p>
+		<p class = "ten2">Jägerhausgasse 65, 1120 Wien</p>
+		<input type = "button" value = "EMAIL" id = "tbtn1">
+		<input type = "button" value = "FACEBOOK" id = "tbtn2">
+		<input type = "button" value = "COOGLE+" id = "tbtn3">
+	</div>
+
+	<div id = "eleven">
+		<p id = "ep1">Copyright kommadrei © Nikolaus Redl 2014</p>
+		<p>Impressum</p>
+	</div>
+
+
+</body>
+</html>
